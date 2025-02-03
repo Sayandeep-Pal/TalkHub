@@ -98,7 +98,7 @@ const io = new Server(server, {
   cors: {
     origin: "https://talk-hub-pearl.vercel.app", // Replace with your frontend URL
     methods: ["GET", "POST"],
-    allowedHeaders: ["my-custom-header"],
+    allowedHeaders: ["Upgrade", "Origin", "X-Requested-With", "Content-Type", "Accept"],
     credentials: true, // Enable credentials if needed
   },
 });

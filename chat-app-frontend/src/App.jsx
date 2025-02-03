@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import io from "socket.io-client";
 
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://talk-hub-be.vercel.app");
 
 function App() {
     const [username, setUsername] = useState("");
